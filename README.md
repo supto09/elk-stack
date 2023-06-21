@@ -493,3 +493,18 @@ See the following Wiki pages:
 [ls-docker]: https://www.elastic.co/guide/en/logstash/current/docker-config.html
 
 [upgrade]: https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html
+
+
+
+### Remove containers
+```
+docker-compose down -v
+```
+
+```
+docker container ls -f 'status=exited'
+```
+
+```
+docker rm {{container id}}
+```
