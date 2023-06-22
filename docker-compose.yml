@@ -24,6 +24,7 @@ services:
       args:
         ELASTIC_VERSION: ${ELASTIC_VERSION}
     init: true
+    container_name: "elk-setup"
     volumes:
       - ./setup/entrypoint.sh:/entrypoint.sh:ro,Z
       - ./setup/lib.sh:/lib.sh:ro,Z
